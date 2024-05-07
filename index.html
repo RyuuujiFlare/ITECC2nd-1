@@ -7,6 +7,28 @@
   
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> 
+    <style>
+        nav {
+            background-color: black;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; 
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark fixed-top"> 
@@ -14,19 +36,19 @@
     </nav>
 
     <section class="container">
-        <h2>Toggle Between Smiley and Sad Emojis</h2>
+        <h2> Smiley and Sad </h2>
         <img id="smiley" src="https://t4.ftcdn.net/jpg/01/15/20/75/360_F_115207580_US2etunH78I7iMYHOoNVvxQTCIdoPdRj.jpg" alt="Smiley">
         <button class="btn btn-primary toggleButton">Change Image</button>
     </section>
 
     <section class="emoji-container" id="emoji1">
-        <h2>Emoji 1</h2>
+        <h2>Mad and Calm</h2>
         <img id="mad" src="https://t3.ftcdn.net/jpg/02/16/61/12/360_F_216611200_XH37SaNS1S3kpcKhafU9HtlDj4IdtNoH.jpg" alt="mad">
         <button class="btn btn-primary toggleButton">Change Image</button>
     </section>
 
     <section class="emoji-container" id="emoji2">
-        <h2>Emoji 2</h2>
+        <h2>Annoyed and Cool</h2>
         <img id="annoyed" src="https://t3.ftcdn.net/jpg/05/20/49/54/360_F_520495441_YiNTg3wI4DaCPl158SBwf1ZyaLONkymt.jpg" alt="annoyed">
         <button class="btn btn-primary toggleButton">Change Image</button>
     </section>

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease; /* Add transition for background color change */
+}
+
+.container,
+.emoji-container {
+    text-align: center;
+    margin: 20px auto; /* Center the containers horizontally and add some margin at the top and bottom */
+    width: 300px; /* Set a fixed width for the containers */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+
+h1 {
+    color: #333;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background color and transform */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Add hover animation for scaling */
+}
+
+nav {
+    background-color: black;
+}

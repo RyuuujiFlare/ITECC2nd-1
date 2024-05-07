@@ -4,68 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emoji Toggle</title>
-    
+  
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        nav {
-            background-color: black;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000; /* Ensure the navigation appears above other content */
-        }
-        
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-            color: white;
-        }
-        
-        .emoji-container {
-            margin-top: 20px; /* Space between sections */
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Emoji Toggling</li>
-        </ul>
+    <nav class="navbar navbar-dark bg-dark fixed-top"> 
+        <a class="navbar-brand" href="#">Emoji Toggle</a>
     </nav>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <section class="emoji-container">
-                    <h2>Happy and Sad</h2>
-                    <img id="smiley" src="https://t4.ftcdn.net/jpg/01/15/20/75/360_F_115207580_US2etunH78I7iMYHOoNVvxQTCIdoPdRj.jpg" alt="Smiley" class="img-fluid">
-                    <button id="toggleButton" class="btn btn-primary mt-2">Change Image</button>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="emoji-container">
-                    <h2>Mad and Calm</h2>
-                    <img id="mad" src="https://t3.ftcdn.net/jpg/02/16/61/12/360_F_216611200_XH37SaNS1S3kpcKhafU9HtlDj4IdtNoH.jpg" alt="mad" class="img-fluid">
-                    <button id="madButton" class="btn btn-primary mt-2">Change Image</button>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <section class="emoji-container">
-                    <h2>Annoyed and Cool</h2>
-                    <img id="annoyed" src="https://t3.ftcdn.net/jpg/05/20/49/54/360_F_520495441_YiNTg3wI4DaCPl158SBwf1ZyaLONkymt.jpg" alt="annoyed" class="img-fluid">
-                    <button id="annoyedButton" class="btn btn-primary mt-2">Change Image</button>
-                </section>
-            </div>
-        </div>
-    </div>
-    
+
+    <section class="container">
+        <h2>Toggle Between Smiley and Sad Emojis</h2>
+        <img id="smiley" src="https://t4.ftcdn.net/jpg/01/15/20/75/360_F_115207580_US2etunH78I7iMYHOoNVvxQTCIdoPdRj.jpg" alt="Smiley">
+        <button class="btn btn-primary toggleButton">Change Image</button>
+    </section>
+
+    <section class="emoji-container" id="emoji1">
+        <h2>Emoji 1</h2>
+        <img id="mad" src="https://t3.ftcdn.net/jpg/02/16/61/12/360_F_216611200_XH37SaNS1S3kpcKhafU9HtlDj4IdtNoH.jpg" alt="mad">
+        <button class="btn btn-primary toggleButton">Change Image</button>
+    </section>
+
+    <section class="emoji-container" id="emoji2">
+        <h2>Emoji 2</h2>
+        <img id="annoyed" src="https://t3.ftcdn.net/jpg/05/20/49/54/360_F_520495441_YiNTg3wI4DaCPl158SBwf1ZyaLONkymt.jpg" alt="annoyed">
+        <button class="btn btn-primary toggleButton">Change Image</button>
+    </section>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
